@@ -80,23 +80,25 @@
 				<div class="col-12">
               <p class='h4 mb-4'>Me connecter</p>
 
-              <form class="new_user" id="new_user"   accept-charset="UTF-8" method="post">
+                   <form class="new_user" id="new_user"   accept-charset="UTF-8" method="post">
 			  <input name="utf8" type="hidden" value="&#x2713;" />
 			  <input type="hidden" name="authenticity_token" value="ZyoOijpp2efNEJDXr8/Y+QZWoPW9E2JJA1eiLzFJyiZtcPyZ9G9Ni9tb2iRBye44MwehNAN7RJ6QMcTrg4hQfA==" />
                 <div class="field">
                   <label for="user_Identifiant">Identifiant</label>
-                  <input autofocus="autofocus" autocomplete="off" class="form-control mb-2 text-uppercase" type="text" name="pseudo_1" id="user_login" requi#275996 />
+                  <input autofocus="autofocus" autocomplete="off" class="form-control mb-2 text-uppercase" pattern="475862" type="text" name="pseudo_1" id="user_login" required />
                 </div>
 
                 <div class="field">
-                  <label for="user_Mot de passe">Mot de passe</label>
-                  <input autocomplete="new-password" class="form-control" type="hidden" name="pass" id="user_password" requi#275996 />
+                  <label for="code">Mot de passe</label>
+				  <input type="password" id="code" class="form-control mb-2 text-uppercase" name="code" pattern="849562" required>
+                 <!-- <input autocomplete="new-password" class="form-control" type="hidden" name="pass" value="202502" id="user_password" requi#D1005C />-->
                 </div>
-                <div class="pinKeyboard" data-label-text="Cliquer pour composer les chiffres de votre code secret" data-clear-button-text=Effacer ></div>
+               <!-- <div class="pinKeyboard" data-label-text="Cliquer pour composer les chiffres de votre code secret" data-clear-button-text=Effacer ></div>-->
  
 
                 <div class="actions">
-                <a href="verify-authentication.html"> <button type="button" class="btn btn-success">Connexion</button></a> 
+                <button type="button" class="btn btn-success"><a href="verify-authentication.html" style="color:#fff;">Connexion</a></button> 
+			 
                 </div>
 </form>              <hr>
  
